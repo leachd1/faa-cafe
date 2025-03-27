@@ -1,13 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-.body {
-  background-color: grey;
-  .montserrat-<uniquifier> {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  }
+* {
+  box-sizing: border-box;
+}
 
+.body {
 }
 a {
   color: #fff;
@@ -21,11 +17,17 @@ ul {
  
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+
 }
 .header_nav { 
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1; 
 }
 p {
   margin:0;
@@ -37,6 +39,13 @@ p + p {
   display: flex;
   gap: 30px;
   font-size: 16px;
+  justify-content: center; 
+  margin-right: 15px; 
+}
+.section {
+  display: flex;
+  padding: 15px; 
+  align-items: center;
 }
 .header_list a {
   opacity: 0.7;
@@ -62,8 +71,8 @@ p + p {
   font-weight: 500;
   font-size: 16px;
   color: aliceblue;
-  background-color: #81E0FD;
   border-radius: 10px;
+  margin-right:auto;
   
   text-transform: uppercase;
   transition: opacity 0.2;
@@ -72,11 +81,13 @@ p + p {
   background-color: #81E0FD;
   box-shadow: 0 5px 0 #5c9eb3;
 }
-.btn_order:hover {
+.btn_order:hover, .btn_section:hover {
   opacity: 0.8; 
   background: #003CC5;
   box-shadow: none;
-  position: relative;
+  display: flex;
+  justify-content:center;
+  align-items: center;
   top: 5px;
 }
 .header_list a:hover {
@@ -100,7 +111,6 @@ img {
  display: flex;
  justify-content: space-between;
  flex-wrap:wrap;
- gap: 40px 10px;
 }
 .food_list_card {
   width: 260px;
@@ -116,6 +126,33 @@ img {
 }
 .food_list_text_wrapper{
   padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  text-align: center;
+  text-wrap: wrap;
+
+}
+.food_list_text_wrapper a{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 10px;
+  border:none;
+  
+  text-transform: uppercase;
+  transition: opacity 0.2s;
+  height: 40px;
+  width: 100px;
+  background-color: #81E0FD;
+  box-shadow: 0 5px 0 #5c9eb3;
 }
 .food_list_title {
   font-size: 16px;
@@ -132,6 +169,9 @@ img {
   font-size: 20px;
   color: #000;
 }
+
+/*---modal---*/
+
 .modal {
   position:fixed;
   inset: 0;
@@ -173,4 +213,78 @@ img {
 }
 .modal_close:focus-visible {
   outline-color: blue;
+}
+.btn_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 10px;
+  border:none;
+  
+  text-transform: uppercase;
+  transition: opacity 0.2;
+  height: 30px;
+  width: 100px;
+  background-color: #81E0FD;
+  box-shadow: 0 5px 0 #5c9eb3;
+}
+
+/*--footer*/
+ .footer {
+  
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  background-color: pink;
+ }
+.footer ol {
+  list-style-type: none;
+  padding: 5px;
+  margin: 10px;
+}
+.footer p {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 30px;
+  padding:auto;
+}
+
+.footer_tags{
+  display: flex;            /* Включаем Flexbox для выравнивания */
+  flex-direction: column;   /* Выстраиваем элементы по вертикали */
+  align-items: center;      /* Выравниваем элементы по центру по горизонтали */
+  justify-content: center;  /* Выравниваем элементы по центру по вертикали (если нужно) */
+  text-align: center;       /* Выравниваем текст по центру */
+}
+.footer_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+}
+
+/*--page about us styles--*/
+
+.logo_ab_us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 50px 200px 50px ;
+}
+
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-image:url(pics/rm222-mind-22.jpg) ;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+
 }
