@@ -1,18 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-* {
-  box-sizing: border-box;
+
+* {box-sizing: border-box;}
+.modal, .food_list, body {
+  font-family: 'Montserrat', sans-serif !important;
 }
 
-.body {
-}
 a {
-  color: #fff;
   text-decoration: none;
 }
 ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
  
 .header {
@@ -20,14 +16,15 @@ ul {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  height: 90px;
   padding: 0 20px;
-
 }
 .header_nav { 
   display: flex;
   align-items: center;
   justify-content: center;
   flex-grow: 1; 
+  height: 90px;
 }
 p {
   margin:0;
@@ -38,7 +35,7 @@ p + p {
 .header_list {
   display: flex;
   gap: 30px;
-  font-size: 16px;
+  font-size: 24px;
   justify-content: center; 
   margin-right: 15px; 
 }
@@ -46,6 +43,10 @@ p + p {
   display: flex;
   padding: 15px; 
   align-items: center;
+}
+.btn_section {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 500;
 }
 .header_list a {
   opacity: 0.7;
@@ -57,11 +58,11 @@ p + p {
 }
 .header_list a.active {
   opacity: 1;
-  font-size: 16px;
+  border-bottom: 1px solid;
   font-weight: 600;
 }
 .header_nav a {
-  font-size: 16px;
+  font-size: 18px;
   opacity: 0.7;
 }
 .btn_order {
@@ -69,7 +70,7 @@ p + p {
   justify-content: center;
   align-items: center;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   color: aliceblue;
   border-radius: 10px;
   margin-right:auto;
@@ -105,19 +106,25 @@ img {
 
 .food_list {
   width: 100%;
-  padding: 100px 0;
+  padding: 50px 0;
 }
-.food_list .container {
- display: flex;
- justify-content: space-between;
- flex-wrap:wrap;
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; 
+  flex-wrap: wrap;
+  padding: 50px 20px;
 }
 .food_list_card {
-  width: 260px;
+  width: 300px;
   overflow: hidden;
   background-color: grey;
   border-radius: 10px;
   text-align: center;
+  transition: transform 0.3s ease;
+}
+.food_list_card:hover {
+  transform: scale(1.05);
 }
 .food_list img {
   width: 100%;
@@ -125,15 +132,62 @@ img {
   object-fit: cover;
 }
 .food_list_text_wrapper{
-  padding: 30px 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; 
+  text-align: center;
+}
+.food_list_title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.food_list_desc {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+.order_price {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.order_buttons {
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 20px;
-  text-align: center;
-  text-wrap: wrap;
-
+  margin-bottom: 10px;
+  gap: 10px;
+}
+.order_buttons button {
+  font-size: 20px;
+  background-color: #81E0FD;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.order_buttons span {
+  font-size: 18px;
+}
+.order_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 10px;
+  text-transform: uppercase;
+  transition: opacity 0.2;
+  height: 40px;
+  width: 100px;
+  background-color: #81E0FD;
+  box-shadow: 0 5px 0 #5c9eb3;
+  cursor: pointer;
+  border-style: none;
 }
 .food_list_text_wrapper a{
   display:flex;
@@ -180,6 +234,7 @@ img {
   padding: 30px;
   overflow-y: auto;
   display: none;
+  z-index:9999;
 }
 .modal_main {
   position: relative;
@@ -190,9 +245,57 @@ img {
   border-radius: 10px;
   padding: 30px;
   cursor: default;
+  z-index: 10000;
 }
 .modal_title {
+  display: flex;
   margin-bottom: 30px;
+  justify-content: center;
+  
+  height: 30px;
+  width: 315px;
+
+  margin-top:0px;
+  margin-bottom: 10px;
+}
+
+.form-example {
+  width: 325px;
+  
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+  padding: 10px;
+}
+.registration-button {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  height: 45px; 
+  font-size: 18px; 
+  background-color: #81E0FD; 
+  box-shadow: 0 5px 0 #5c9eb3;
+  border-radius: 10px;
+  border: none; 
+  cursor: pointer; 
+  text-transform: uppercase;
+  transition: opacity 0.2s;
+
+}
+.label {
+  width: 110px;
+}
+.label-email, .label-password {
+  margin-bottom: 10px;
+}
+.input-email, .input-password {
+  margin-bottom: 10px;
+  width: 100%; 
+  padding: 8px;
+  box-sizing: border-box;
 }
 .modal_close {
   background-color:transparent;
@@ -238,53 +341,39 @@ img {
   display:flex;
   flex-direction: row;
   justify-content: space-around;
+  height: 200px;
 
-  background-color: pink;
+  background-color: rgb(117, 122, 117);
  }
 .footer ol {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
   list-style-type: none;
   padding: 5px;
   margin: 10px;
+  
 }
 .footer p {
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 500;
   margin: 30px;
   padding:auto;
 }
 
 .footer_tags{
-  display: flex;            /* Включаем Flexbox для выравнивания */
-  flex-direction: column;   /* Выстраиваем элементы по вертикали */
-  align-items: center;      /* Выравниваем элементы по центру по горизонтали */
-  justify-content: center;  /* Выравниваем элементы по центру по вертикали (если нужно) */
-  text-align: center;       /* Выравниваем текст по центру */
+  display: flex;           
+  flex-direction: column;   
+  align-items: center;     
+  justify-content: center;  
+  text-align: center;       
 }
 .footer_logo {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 100px 0;
-}
-
-/*--page about us styles--*/
-
-.logo_ab_us {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto 50px 200px 50px ;
-}
-
-.about-us {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  background-image:url(pics/rm222-mind-22.jpg) ;
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: center; 
+  margin: 40px 10px;
 
 }
+
+
+

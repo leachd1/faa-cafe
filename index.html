@@ -6,48 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv = "X-UA-Compatible" content = "IE-Chrome">
     <title>faa cafe</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
     <link rel = "stylesheet" href = "styles.css" type = "text/css">
+    <script src="https://kit.fontawesome.com/8fe048c345.js" crossorigin="anonymous"></script>
     <script src = "scripts/main.js" defer></script>
     
     
 </head>   
 <body>
     <header class="header">
-        <a href = "index.html"><img src="pics/icons/logo1.png" height="90px" width = "90px" alt="Логотип"class="header_logo"></a>
-            <nav class="header_nav">
-                <ul class = "header_list">
-                    <li><a class = "active" href = #!>Меню</a></li>
-                    <li><a href = "ab_us.html">О нас</a></li>
-                    <li><a href = "deliver.html">Доставка</a></li>      
-                </ul>
-            </nav>
-            <section class="section">
-                <button class="btn_section">Войти</button>
-            </section>
-            <div class="modal">
-                <div class="modal_main">
-                    <h2 class="modal_title">Вход</h2>
-                        
-                    <div class="modal_container">
-                        <form action="" method="get" class="form-example">
-                            <div class="form-example">
-                              <label for="email">Введите свою почту: </label>
-                              <input type="email" name="email" id="email" required />
-                            </div>
-                            <div class="form-example">
-                              <label for="password">Введите пароль: </label>
-                              <input type="password" name="password" id="password" required />
-                            </div>
-                            <div class="form-example">
-                              <input type="submit" value="Зарегистрироваться" />
-                            </div>
-                          </form>
+    
+
+            <a href = "index.html"><img src="pics/icons/logo1.png" height="90px" width = "90px" alt="Логотип"class="header_logo"></a>
+                <nav class="header_nav">
+                    <ul class = "header_list">
+                        <li><a class = "active" href = #!>Меню</a></li>
+                        <li><a href = "ab_us.html">О нас</a></li>
+                        <li><a href = "deliver.html">Доставка</a></li>      
+                    </ul>
+                </nav>
+                <section class="section">
+                    <button class="btn_section">Войти</button>
+                </section>
+                <div class="modal">
+                    <div class="modal_main">
+                        <h2 class="modal_title">Вход</h2>
+                            
+                        <div class="modal_container">
+                            <form action="" method="get" class="form-example">
+                                <div>
+                                <label class = "label-email" for="email">Введите почту: </label>
+                                <input class = "input-email" type="email" name="email" id="email" required />
+                                <label class = "label-password"for="password">Введите пароль: </label>
+                                <input class = "input-password" type="password" name="password" id="password" required />
+                                </div>
+                                <div class="form-example-button">
+                                <input class = "registration-button"type="submit" value="Зарегистрироваться" />
+                                </div>
+                            </form>
+                        </div>
+                    <button class="modal_close">&#10006;</button>
                     </div>
-                <button class="modal_close">&#10006;</button>
                 </div>
-            </div>
-                
-                <a href="" class = "btn_order">Корзина</a>
+                    
+                    <a href="" class = "btn_order">Корзина</a>
+
     </header>
     <section class="food_list">
         <div class="container">
@@ -55,45 +58,56 @@
                 <img src="pics/sushi_1position.png" alt="food">
                 <div class="food_list_text_wrapper">
                     <h4 class="food_list_title">Суши</h4>
-                    <p class="food_list_desc">С креветками и трюфелями,почувствуй райское наслаждение</p>
-                    <span class="order_price">$2</span>
-                    <a href="#!">В корзину</a>
+                    <p class="food_list_desc">С креветками и трюфелями, почувствуй райское наслаждение</p>
+                    <span class="order_price">299₽</span>
+                    <button class="order_button">В корзину</button>
+                    <div class="order_buttons" style="display: none;">
+                        <button class="decrement">-</button>
+                        <span class="count">1</span>
+                        <button class="increment">+</button>
+                    </div>
                 </div>    
             </div>
             <div class="food_list_card">
                 <img src="pics/sushi_1position.png" alt="food">
                 <div class="food_list_text_wrapper">
                     <h4 class="food_list_title">Суши</h4>
-                    <p class="food_list_desc">С креветками и трюфелями,почувствуй райское наслаждение</p>
-                    <span class="order_price">$2</span>
-                    <a href="#!">В корзину</a>
+                    <p class="food_list_desc">С креветками и трюфелями, почувствуй райское наслаждение</p>
+                    <span class="order_price">299₽</span>
+                    <button class="order_button">В корзину</button>
+                    <div class="order_buttons" style="display: none;">
+                        <button class="decrement">-</button>
+                        <span class="count">1</span>
+                        <button class="increment">+</button>
+                    </div>
                 </div>    
             </div>
             <div class="food_list_card">
                 <img src="pics/sushi_1position.png" alt="food">
                 <div class="food_list_text_wrapper">
                     <h4 class="food_list_title">Суши</h4>
-                    <p class="food_list_desc">С креветками и трюфелями,почувствуй райское наслаждение</p>
-                    <span class="order_price">$2</span>
-                    <a href="#!">В корзину</a>
+                    <p class="food_list_desc">С креветками и трюфелями, почувствуй райское наслаждение</p>
+                    <span class="order_price">299₽</span>
+                    <button class="order_button">В корзину</button>
+                    <div class="order_buttons" style="display: none;">
+                        <button class="decrement">-</button>
+                        <span class="count">1</span>
+                        <button class="increment">+</button>
+                    </div>
                 </div>    
             </div>
             <div class="food_list_card">
                 <img src="pics/sushi_1position.png" alt="food">
                 <div class="food_list_text_wrapper">
                     <h4 class="food_list_title">Суши</h4>
-                    <p class="food_list_desc">С креветками и трюфелями,почувствуй райское наслаждение</p>
-                    <span class="order_price">$2</span>
-                    <a href="#!">В корзину</a>
-                </div>    
-            </div>
-            <div class="food_list_card">
-                <img src="pics/sushi_1position.png" alt="food">
-                <div class="food_list_text_wrapper">
-                    <h4 class="food_list_title">Суши</h4>
-                    <p class="food_list_desc">С креветками и трюфелями,почувствуй райское наслаждение</p>
-                    <span class="order_price">$2</span>
-                    <a href="#!">В корзину</a>
+                    <p class="food_list_desc">С креветками и трюфелями, почувствуй райское наслаждение</p>
+                    <span class="order_price">299₽</span>
+                    <button class="order_button">В корзину</button>
+                    <div class="order_buttons" style="display: none;">
+                        <button class="decrement">-</button>
+                        <span class="count">1</span>
+                        <button class="increment">+</button>
+                    </div>
                 </div>    
             </div>
         </div>
@@ -104,13 +118,8 @@
     <section class = "footer">
         <img src = "pics/icons/logo1.png" width="110px" height="110px" class = "footer_logo">
         <div class="footer_tags">
-            <p>Правовая информация</p>
-            <ol class = "adress_where_ucanfuck_mamaroza"> 
-                <li>ул.Маршала Федоренко 8к1</li>
-                <li>подъезд 2 кв.56</li>
-                <li>Этаж 3 имя Евгенийсосалыч</li>
-            </ol>
-            <p>Все права защищены жопой Жени  <img src = "pics/icons/upside-down-solid-24.png"></p>
+            <p>Отлично!Вы изучили нашу страницу по доставке еды.Надеемся вам понравился наш мини-проект по отработке знаний!Смотрите наши остальные преокты также в нашем Git.</p>
+            <p>Все права защищены 2025</p>
         </div>
         <div class="container_contacts">
             <h1>Связаться с нами</h1>

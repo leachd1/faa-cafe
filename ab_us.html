@@ -1,55 +1,56 @@
-<!DOCTYPE html>
-<html lang="ru-RU">
-<head>
-    <meta charset="UTF-8">
+<html>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv = "X-UA-Compatible" content = "IE-Chrome">
-    <title>faa cafe</title>
-    <link rel = "stylesheet" href = "styles.css" type = "text/css">
-    <script src = "scripts/main.js" defer></script>
-</head>
-<body>
-    <header>
-        <div class="logo_ab_us">
-            <a href = "index.html"><img src="pics/icons/logo1.png" alt="Логотип компании" height = "90px" width = "90px"></a>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "styles_ab_us.css"
+    <script src="https://kit.fontawesome.com/8fe048c345.js" crossorigin="anonymous"></script>
+    <title>faa-cafe</title>
+  </head>
+  <body>
+    <header class="header main-grid">
+      <div class="header-content">
+        <a href = "index.html" style = "text-decoration:none;"><img src = "pics/icons/logo1.png" height = "90px" width = "90px"></a>
+        <button aria-label="Open navigation" class="open-nav">&#9776;</button>
+        <nav class="navigation">
+          <button aria-label="Close navigation" class="close-nav">&times;</button>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+            <li class="nav-item"><a href="#!" class="nav-link current">О нас</a></li>
+            <li class="nav-item"><a href="deliver.html" class="nav-link">Корзина</a></li>
+          </ul>
+        </nav>
+      </div>
+    </nav>
     </header>
-    
-    <main>
-        <section class="about-us">
-            <h1>Мы — не просто доставка еды, мы создаём вкусные моменты!</h1>
-            <p>Добро пожаловать в faa-cafe — команду, которая превращает обычные обеды и ужины в незабываемые моменты...</p>
-            <p>В faa-cafe мы не просто доставляем еду, мы делаем это с душой...</p>
-    
-            <h2>Почему мы?</h2>
-            <ul>
-                <li><strong>Свежесть и качество</strong> — мы не экономим на ингредиентах...</li>
-                <li><strong>Быстрая доставка</strong> — мы знаем, как важно...</li>
-                <li><strong>Разнообразие меню</strong> — от классических блюд...</li>
-                <li><strong>Неповторимый сервис</strong> — каждый заказ для нас уникален...</li>
-                <li><strong>Приятные бонусы</strong> — мы регулярно радуем наших клиентов...</li>
-            </ul>
-    
-            <img src="pics/dovolyi_client.jpg" height = "90px" width = "90px" alt="Счастливые клиенты с нашей едой" />
-    
-            <p>Если у вас возникли вопросы или пожелания, мы всегда готовы помочь! Свяжитесь с нами по телефону: <strong>(123) 456-7890</strong> или напишите нам на email: <strong>info@company.com</strong>.</p>
-        </section>
+    <main class="main-grid">
+            <div class="head">
+            <h1 class="page-title">О нас</h1>
+            <p class="subtitle">Мы специалисты по изготовлению азиатской кухни. Творчество и веселье — наши ингредиенты для потрясающих блюд.</p>
+            </div>
+            <img class="main-image" src="pics/shrek.jpg" alt="two men in a coworking space">
+            
+            <div class="main-text">
+                <h2 class="section-title">Мы нереально крутые парни</h2>
+                <p>Готовка — это страсть, и наша команда — лучшее, что вы можете встретить для получения новых эмоций. Наши сильные стороны — суши с трюфелями и креветками. Если вы хотите узнать больше, пожалуйста, посмотрите наше портфолио. </p>
+                <p>Мы учились всему с нуля и проводили бессонные ночи, чтобы изучить все основы, а также продвинутые техники готовки. Мы любим работать с нестандартными ингредиентами, и именно поэтому вы не найдете у нас самые необычные блюда.</p>
+              
+                <h2 class="section-title sub">Мы можем выполнить практически любую работу</h2>
+                <p>Честно говоря, мы хотели бы поддержать вас в вашей идее. Мы вместе добьемся результатов, и в конце концов, что еще имеет значение?</p>
+                <p>Конечно, возможно, мы немного отличаемся от того, что вы ожидаете, но если вы хотите добиться своего идеального блюда, то мы — именно то, что вам нужно.</p>
+            </div>
+      
     </main>
     
-    <footer>
-        <div class="footer-content">
-            <ul>
-                <li><a href="/privacy-policy">Политика конфиденциальности</a></li>
-                <li><a href="/terms-of-service">Условия использования</a></li>
-                <li><a href="/contact">Контакты</a></li>
-            </ul>
-            <div class="social-media">
-                <a href="https://facebook.com">Facebook</a>
-                <a href="https://instagram.com">Instagram</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 faa-cafe. Все права защищены.</p>
-        </div>
+    <footer class="footer main-grid">
+      <div class="footer-text">
+        <p class="end">Отлично, вы изучили нашу страницу. Подпишитесь на наши аккаунты в социальных сетях. Они указаны на правильном сайте. Вы не можете не заметить иконки. Если вам понравились наши проекты, мы будем рады поработать для вас.</p>
+        <p class="copyright">© example2020</p>
+      </div>
+      <div class="social">
+        <a href="#" class="facebook icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="twitter icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="instagram icon"><i class="fab fa-instagram"></i></a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
